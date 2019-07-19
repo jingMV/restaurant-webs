@@ -4,12 +4,13 @@
     <section>
         <span class="background-overlay"></span>
         <h1>Foods and Coffee</h1>
-        <p>Treat your family and Friends here at Rr Restaurant</p>
+        <p>Treat your family and Friends here at FC Restaurant</p>
         <div class="arrow-wrapper">
         <div class="arrow-down">
+            <p>scroll down</p>
             <span class="bar barA"></span>
             <span class="bar barB"></span>
-            <p>scroll down</p>
+            
         </div>
         </div>
     </section>
@@ -29,7 +30,7 @@ export default {
 }
 section {
     text-align: center;
-    padding: 70px 0px 40px;
+    padding: 90px 0px 40px;
 }
 section h1 {
     color: #FFBC00;
@@ -59,16 +60,16 @@ section p {
     display: block;
     margin:  auto;
     border-radius: 10px;
-    animation: arrow-animation 2s infinite;
+    animation: arrow-animation 2.5s infinite;
     position: relative;
     
 }
 @keyframes arrow-animation {
     from {
-        top: -10px;
+        top: -8px;
     }
     to {
-        top: 0px;
+        top: 5px;
     }
 }
 .barA {
@@ -86,5 +87,57 @@ section p {
     z-index: 1;
     background: black;
     opacity: 0.8;
+}
+@media only screen and (min-width: 500px) {
+    section h1 {
+    font-size: 40px;
+}
+section p {
+    font-size: 12px;
+}
+.arrow-wrapper {
+    margin-top: 120px;
+}
+}
+@media only screen and (min-width: 700px) {
+        section h1 {
+    font-size: 50px;
+}
+section p {
+    font-size: 13px;
+}
+.arrow-wrapper {
+    margin-top: 140px;
+}
+}
+@media only screen and (min-width: 960px) {
+section {
+padding: 120px 0px 40px;
+}
+section h1 {
+font-size: 70px;
+}
+section p {
+    font-size: 13px;
+    line-height: 1px;
+}
+.arrow-wrapper {
+    margin-top: 200px;
+}
+}
+@media only screen and (min-width: 1150px) {
+    section {
+padding: 200px 0px 60px;
+}
+section h1 {
+font-size: 85px;
+}
+section p {
+    font-size: 14px;
+    line-height: 1px;
+}
+.arrow-wrapper {
+    margin-top: 330px;
+}
 }
 </style>

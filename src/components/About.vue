@@ -48,4 +48,28 @@ section {
     width: 100%;
     min-height: 10%;
 }
+@media only screen and (min-width: 500px) {
+    section {
+    padding: 35px 20px;
+}
+}
+@media only screen and (min-width: 960px) {
+section h2 {
+font-size: 21px;
+}
+section p {
+    font-size: 13px;
+}
+section {
+    padding: 70px 50px;
+}
+}
+@media only screen and (min-width: 1150px) {
+section h2 {
+margin-bottom: 40px;
+}
+section {
+    padding:  90px 70px;
+}
+}
 </style>

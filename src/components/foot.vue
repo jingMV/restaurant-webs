@@ -2,7 +2,7 @@
     <div id="footer">
         <div class="wrapper">
             <footer>
-               <small>&copy; Rr Restaurant 2019</small> 
+               <small>&copy; FC Restaurant 2019</small> 
             </footer>
         </div>
     </div>
@@ -19,8 +19,9 @@ footer {
     text-align: center;
 }
 footer small {
-    color: #91d000;
+    color: black;
 }
+
 </style>
 
 

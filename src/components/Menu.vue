@@ -11,7 +11,8 @@
                 <v-tabs v-model="model"
                 slider-color="#91D000"
                 left
-                show-arrows>
+                show-arrows
+                max>
 
                 <v-tab v-for="item in items" 
                 :key="item"
@@ -39,7 +40,8 @@
         <v-carousel hide-controls class="hidden-sm-and-down">
             <v-carousel-item v-for="(myImg, i) in myImgs" 
             :key="i"
-            :src="myImg.src">
+            :src="myImg.src"
+            >
             </v-carousel-item>
         </v-carousel>
     </div>
@@ -81,6 +83,42 @@ section h2 {
 .menu-text {
     font-size: 12px;
 }
+@media only screen and (min-width: 700px) {
+    section {
+    padding: 50px 20px;
+}
+}
+@media only screen and (min-width: 960px) {
+section h2 {
+font-size: 21px;
+margin-bottom: 40px;
+}
+.menu-text {
+    font-size: 13px;
+}
+.img-content {
+    width: 500px;
+}
+.menu-content {
+    width: 400px;
+}
+.menu-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+}
+@media only screen and (min-width: 1150px) {
+section h2 {
+margin-bottom: 60px;
+}
+    section {
+    padding: 50px 40px;
+}
+.menu-content {
+    width: 500px;
+}
+}
+
 </style>
 
 

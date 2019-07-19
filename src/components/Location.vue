@@ -43,6 +43,34 @@ section {
 .img-content img {
     width: 100%;
 }
+@media only screen and (min-width: 500px) {
+    section {
+    padding: 30px 20px 0px;
+}
+}
+@media only screen and (min-width: 700px) {
+    section {
+    padding: 30px 50px 0px;
+}
+}
+@media only screen and (min-width: 960px) {
+    section {
+        display: flex;
+    }
+    .content {
+        width: 500px;
+        padding: 5px;
+    }
+}
+@media only screen and (min-width: 1150px) {
+        .content {
+        width: 700px;
+        padding: 20px;
+    }
+        section {
+        padding: 30px 20px;
+    }
+}
 </style>
 
 

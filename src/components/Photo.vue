@@ -20,7 +20,6 @@ export default {
 <style scoped>
 .grid-wrapper img {
     width: 100%;
-    
 }
 .grid-wrapper {
     width: 80%;
@@ -31,6 +30,30 @@ section h2 {
     margin-bottom: 20px;
     color: #FFBC00;
     font-size: 18px;
+}
+@media only screen and (min-width: 700px) {
+.grid-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#photo {
+    padding: 0px 0px 50px;
+}
+.grid-wrapper img {
+    width: 200px;
+}
+}
+@media only screen and (min-width: 1150px) {
+    section h2 {
+    margin-bottom: 60px;
+    font-size: 21px;
+}
+#photo {
+    padding: 0px 40px 50px 40px;
+}
+.grid-wrapper img {
+    width: 250px;
+}
 }
 </style>
 
