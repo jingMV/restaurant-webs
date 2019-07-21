@@ -77,7 +77,9 @@ export default {
 <style scoped>
 #menu {
     background: #f1f1f1;
+    position: relative;
 }
+
 section {
     padding: 35px 0px;
 }
@@ -97,6 +99,7 @@ section h2 {
 .menu-text {
     width: 400px;
     margin: 0 auto;
+ 
 }
 }
 @media only screen and (min-width: 960px) {
@@ -125,6 +128,19 @@ padding: 50px 40px;
 .menu-content {
     width: 500px;
 }
+#menu::before {
+    content: '';
+    width: 350px;
+    height: 550px;
+    background-image: url('~@/assets/menuBG.png');
+    background-size: 350px 550px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    
+
+}
+
 }
 
 </style>
