@@ -2,17 +2,19 @@
     <div id="location">
         <div class="wrapper">
             <section>
-                <div class="content">
-                <h2>Location</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-industry. Lorem Ipsum has been the industry's standard dummy 
-text ever since the 1500s, when an unknown printer took a galley 
-of type and scrambled it to makea type specimen book. It has 
-survived not only five centuries, but also the leap into electronic 
-typesetting, remaining essentially unchanged. It was popularised 
-in the 1960s with the release of Letraset sheets containing Lorem 
-Ipsumpassages, and more recently with desktop publishing software 
-like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="content" id="contact">
+                <h2>Location and Contact</h2>
+                <b>Location:</b>230 Sitio Balangay St. Panguda Philippines<br>
+                <br>
+                <i>-for reservations-</i><br>
+                <b>Contact No:</b> 09245879932<br>
+                <b>Tel No:</b> 578-113-7774<br>
+                <b>Email:</b> fcreservation@gmail.com
+                <br>
+                <br>
+                <i>Closed every Saturday and Sunday</i>
+                
+                
 </div>
 <div class="img-content">
     <img :src="require('../assets/map.png')">
@@ -42,6 +44,9 @@ section {
 }
 .img-content img {
     width: 100%;
+}
+.content {
+    padding-bottom: 50px;
 }
 @media only screen and (min-width: 500px) {
     section {

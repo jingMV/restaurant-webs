@@ -15,7 +15,7 @@
         <v-btn flat v-for="items in myItems" :key="items.Title" :href="items.link">{{items.Title}}</v-btn>
       </v-toolbar-items>
     </v-toolbar>
-    <v-navigation-drawer v-model="sideNav" :fixed="true" :temporary="true">
+    <v-navigation-drawer v-model="sideNav" :fixed="true" :temporary="true" class="nav-drawer">
       <v-list>
         <v-list-tile v-for="items in myItems" :key="items.Title" @click="">
           <v-list-tile-content>
@@ -43,7 +43,7 @@ export default {
         {Title: 'Menu', link: '#menu'},
         {Title: 'Photos', link: '#photo'},
         {Title: 'Location', link: '#location'},
-        {Title: 'Contact', link: 'mailto:genesisviado123@gmail.com'},
+        {Title: 'Contact', link: '#contact'},
       ]
     }
   }
@@ -78,6 +78,9 @@ a {
 }
 .nav {
   z-index: 10;
+}
+.nav-drawer {
+  z-index: 11;
 }
 @media only screen and (min-width: 1250px) {
   .wrapper {

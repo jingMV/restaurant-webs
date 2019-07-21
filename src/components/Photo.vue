@@ -27,7 +27,7 @@ export default {
 }
 section h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 30px 0px 20px;
     color: #FFBC00;
     font-size: 18px;
 }

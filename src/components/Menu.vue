@@ -10,14 +10,14 @@
                 <!--TAB CONTAINER and TAB ITEMS-->
                 <v-tabs v-model="model"
                 slider-color="#91D000"
-                left
+                centered
                 show-arrows
                 max>
 
                 <v-tab v-for="item in items" 
-                :key="item"
-                :href="`#tab-${item}`">
-                {{item}}
+                :key="item.Id"
+                :href="`#tab-${item.itm}`">
+                {{item.itm}}
                 </v-tab>
 
                 </v-tabs>
@@ -26,11 +26,11 @@
                <v-tabs-items v-model="model">
                <v-tab-item
                v-for="item in items"
-               :key="item"
-               :value="`tab-${item}`">
+               :key="item.Id"
+               :value="`tab-${item.itm}`">
 
                <v-card flat>
-               <v-card-text v-text="text" class="menu-text"></v-card-text>
+               <v-card-text class="menu-text"><img :src="item.content"></v-card-text>
                </v-card>
       </v-tab-item>
     </v-tabs-items>
@@ -57,9 +57,13 @@ export default {
         return {
         model: null,
         items: [
-        'Breakfast', 'Lunch', 'Dinner', 'Merienda', 'Soap', 'Dessert', 'Coffee'
+        {itm: 'Breakfast', content: require('../assets/breakfast menu.jpg')},
+         {itm: 'Lunch', content: require('../assets/lunch menu.jpg')},
+         {itm: 'Dinner', content: require('../assets/dinner menu.jpg')},
+         {itm: 'Merienda', content: require('../assets/merienda menu.jpg')},
+         {itm: 'Dessert', content: require('../assets/dessert menu.jpg')},
+         {itm: 'Coffee', content: require('../assets/coffee menu.jpg')}
      ],
-     text: '  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makea type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsumpassages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
      myImgs: [
       {src: require('../assets/img1.png')},
       {src: require('../assets/img2.png')},
@@ -71,6 +75,9 @@ export default {
 }
 </script>
 <style scoped>
+#menu {
+    background: #f1f1f1;
+}
 section {
     padding: 35px 0px;
 }
@@ -80,21 +87,22 @@ section h2 {
     color: #91D000;
     font-size: 18px;
 }
-.menu-text {
-    font-size: 12px;
+.menu-text img {
+    width: 100%;
 }
 @media only screen and (min-width: 700px) {
     section {
     padding: 50px 20px;
+}
+.menu-text {
+    width: 400px;
+    margin: 0 auto;
 }
 }
 @media only screen and (min-width: 960px) {
 section h2 {
 font-size: 21px;
 margin-bottom: 40px;
-}
-.menu-text {
-    font-size: 13px;
 }
 .img-content {
     width: 500px;
@@ -111,8 +119,8 @@ margin-bottom: 40px;
 section h2 {
 margin-bottom: 60px;
 }
-    section {
-    padding: 50px 40px;
+section {
+padding: 50px 40px;
 }
 .menu-content {
     width: 500px;
