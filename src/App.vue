@@ -9,7 +9,7 @@
       class="hidden-md-and-up"
       left></v-toolbar-side-icon>
 
-      <v-toolbar-title class="logo" right><router-link to="/"><img :src="require('./assets/FC.png')"></router-link></v-toolbar-title>
+      <v-toolbar-title class="logo" right><a href="#home"><img :src="require('./assets/FC.png')"></a></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat v-for="items in myItems" :key="items.Title" :href="items.link">{{items.Title}}</v-btn>

@@ -1,5 +1,5 @@
 <template>
-    <div id="section">
+    <div id="home">
     <div class="wrapper">
     <section>
         <span class="background-overlay"></span>
@@ -23,7 +23,7 @@ export default {
 }
 </script>
 <style scoped>
-    #section {
+    #home {
     position: relative;
     background-image: url('~@/assets/sectionBG.png');
     background-size: cover;
