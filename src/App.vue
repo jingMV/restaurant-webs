@@ -2,7 +2,8 @@
   <v-app>
     <v-toolbar
     :fixed="true"
-    class="nav">
+    class="nav"
+    dark>
       
       <v-toolbar-side-icon
       @click.native.stop="sideNav = !sideNav"

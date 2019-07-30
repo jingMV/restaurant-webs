@@ -8,8 +8,10 @@
         <div class="arrow-wrapper">
         <div class="arrow-down">
             <p>scroll down</p>
+            <div class="arrows">
             <span class="bar barA"></span>
             <span class="bar barB"></span>
+            </div>
             
         </div>
         </div>
@@ -30,7 +32,9 @@ export default {
 }
 section {
     text-align: center;
-    padding: 90px 0px 40px;
+    padding: 220px 0px 40px;
+    min-height: 750px;
+    
 }
 section h1 {
     color: #FFBC00;
@@ -45,13 +49,14 @@ section p {
     position: relative;
     font-family: 'open sans';
     font-size: 8px;
+    text-align: center;
 }
 .arrow-down {
     z-index: 2;
     position: relative;
 }
 .arrow-wrapper {
-    margin-top: 80px;
+    margin-top: 300px;
 }
 .bar {
     width: 15px;
@@ -64,9 +69,12 @@ section p {
     position: relative;
     
 }
+.arrows {
+    margin-left: -10px;
+}
 @keyframes arrow-animation {
     from {
-        top: -8px;
+        top: -3px;
     }
     to {
         top: 5px;
@@ -87,6 +95,14 @@ section p {
     z-index: 1;
     background: black;
     opacity: 0.8;
+}
+@media only screen and (min-width: 360px) {
+    section h1 {
+    font-size: 37px;
+}
+section p {
+    font-size: 10px;
+}
 }
 @media only screen and (min-width: 500px) {
     section h1 {
@@ -112,7 +128,7 @@ section p {
 }
 @media only screen and (min-width: 960px) {
 section {
-padding: 120px 0px 40px;
+padding: 220px 0px 40px;
 }
 section h1 {
 font-size: 70px;
@@ -122,7 +138,7 @@ section p {
     line-height: 1px;
 }
 .arrow-wrapper {
-    margin-top: 200px;
+    margin-top: 300px;
 }
 }
 @media only screen and (min-width: 1150px) {
